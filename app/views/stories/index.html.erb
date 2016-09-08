@@ -2,8 +2,8 @@
 
 <ul>
   <% @stories.each do |story| %>
-    <li><%= link_to story.title, story_path(story) %></li>
+    <li><span class="<%= story.image %>"></span> <%= link_to story.title, story_path(story) %></li>
   <% end %>
 </ul>
-
+<hr>
 <%= link_to "New Story", new_story_path %>
