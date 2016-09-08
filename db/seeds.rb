@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+stories = Story.create([{
+  title: "Hannah gets a Barbie",
+  image: "glyphicon glyphicon-usd"
+}, {
+  title: "Hannah takes Barbie for a walk",
+  image: "glyphicon glyphicon-play"
+}, {
+  title: "Hannah tells Noah she's more like Abbie and 'Hates UFC'",
+  image: "glyphicon glyphicon-picture"
+}
+])
