@@ -6,7 +6,7 @@
 <ul>
   <% @story.sentences.each do |sentence| %>
     <li>
-      <%= <span class="@sentence.icon"></span> %> |
+      <span class="<%= sentence.icon %>"></span> |
       <%= sentence.contribution %> |
       <%= sentence.user %> |
       <%= link_to "Edit", edit_story_sentence_path(@story, sentence) %> |
