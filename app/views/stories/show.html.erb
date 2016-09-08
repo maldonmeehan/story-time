@@ -1,4 +1,5 @@
 <h1><%= @story.title %></h1>
-<p><%= @story.image %></p>
+<p><span class="<%= @story.image %>"></span></p>
+<%= image_tag "coffee.jpg" %>
 
 <p><%= link_to "Return to stories", stories_path %></p>
