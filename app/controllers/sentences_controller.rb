@@ -19,6 +19,7 @@ class SentencesController < ApplicationController
   def edit
     @story = Story.find(params[:story_id])
     @sentence = Sentence.find(params[:id])
+    @random_s = @sentence.icon
   end
 
   def update
