@@ -3,4 +3,11 @@ class StoriesController < ApplicationController
     @stories = Story.all
     render :index
   end
+
+  def show
+    @story = Story.find(params[:id])
+    render :show
+  end
+
+
 end
