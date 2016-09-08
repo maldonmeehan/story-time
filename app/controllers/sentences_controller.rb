@@ -3,7 +3,7 @@ class SentencesController < ApplicationController
   def new
     @story = Story.find(params[:story_id])
     @sentence = @story.sentences.new
-    @random_s = Random.rand(1...26)
+    @random_s = Random.rand(1...75)
   end
 
   def create

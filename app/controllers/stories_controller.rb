@@ -11,13 +11,13 @@ class StoriesController < ApplicationController
 
   def new
     @story = Story.new
-    @random = Random.rand(1...26)
+    @random = Random.rand(1...75)
     render :new
   end
 
   def edit
     @story = Story.find(params[:id])
-    @random = @story.image    
+    @random = @story.image
     render :edit
   end
 
