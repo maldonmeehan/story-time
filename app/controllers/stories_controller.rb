@@ -17,6 +17,7 @@ class StoriesController < ApplicationController
 
   def edit
     @story = Story.find(params[:id])
+    @random = @story.image    
     render :edit
   end
 
