@@ -2,7 +2,10 @@
 
 <ul>
   <% @stories.each do |story| %>
-    <li><span class="<%= story.image %>"></span> <%= link_to story.title, story_path(story) %></li>
+    <li>
+      <%= image_tag (story.image.to_s + ".png") %>
+      <%= link_to story.title, story_path(story) %>
+    </li>
   <% end %>
 </ul>
 <hr>

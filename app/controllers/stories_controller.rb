@@ -11,6 +11,7 @@ class StoriesController < ApplicationController
 
   def new
     @story = Story.new
+    @random = Random.rand(1...26)
     render :new
   end
 
