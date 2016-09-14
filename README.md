@@ -34,7 +34,7 @@ Further Exploration
 ## Setup/Installation Requirements
 
 ```
-$ git clone https://github.com/maldonmeehan/story_time.git
+$ git clone https://github.com/maldonmeehan/story-time.git
 ```
 
 Install required gems:
